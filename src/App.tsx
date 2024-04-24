@@ -36,7 +36,9 @@ export function App() {
             <div className={styles.taskListContent}>
               <input type='checkbox' />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <Trash color={'var(--gray-300)'} />
+              <button>
+                <Trash color={'var(--gray-300)'} />
+              </button>
             </div>
           </div>
           <div className={styles.taskListWrapper}>
@@ -46,7 +48,9 @@ export function App() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
                 perferendis voluptatem iure ea pariatur consectetur?
               </p>
-              <Trash color={'var(--gray-300)'} />
+              <button>
+                <Trash color={'var(--gray-300)'} />
+              </button>
             </div>
           </div>
           <div className={styles.taskListWrapper}>
@@ -58,7 +62,9 @@ export function App() {
                 delectus deleniti laboriosam blanditiis natus porro?
                 Perspiciatis accusantium officiis ad in at ex? Est, rerum.
               </p>
-              <Trash color={'var(--gray-300)'} />
+              <button>
+                <Trash color={'var(--gray-300)'} />
+              </button>
             </div>
           </div>
         </div>

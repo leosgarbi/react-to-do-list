@@ -57,7 +57,9 @@
   font-size: 14px;
 }
 
-.tasksList .taskListContent input {
+.tasksList .taskListContent button {
+  all: unset;
+  cursor: pointer;
 }
 
 .headerContent {
