@@ -36,9 +36,18 @@ body {
 body,
 input,
 textarea,
-button {
+main {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 140%;
+}
+
+html {
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
 }
