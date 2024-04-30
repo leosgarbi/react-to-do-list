@@ -1,14 +1,14 @@
 import { PlusCircle } from '@phosphor-icons/react';
 import * as Styled from './App.styled';
-import { Button } from './components/Button';
 import { Header } from './components/Header';
-import { Input } from './components/Input/Input';
-import Task from './components/Tasks';
+import { Input } from './components/Input';
+import { Button } from './components/Input/components/Button';
+import Task from './components/Task';
 import './global.css';
 
 export default function App() {
   return (
-    <main>
+    <Styled.Main>
       <Header />
 
       <Styled.Content>
@@ -22,6 +22,6 @@ export default function App() {
 
         <Task name={'Teste'} />
       </Styled.Content>
-    </main>
+    </Styled.Main>
   );
 }

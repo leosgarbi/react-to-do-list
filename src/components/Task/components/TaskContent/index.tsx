@@ -1,5 +1,5 @@
 import { Trash } from '@phosphor-icons/react';
-import * as Styled from '../styled';
+import * as Styled from './styled';
 
 export default function TaskContent() {
   return (

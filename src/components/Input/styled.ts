@@ -1,4 +1,6 @@
-.container {
+import styled from 'styled-components';
+
+export const Container = styled.input`
   border: 1px solid var(--gray-700);
   border-radius: 8px;
 
@@ -10,12 +12,12 @@
   width: 100%;
 
   line-height: 140%;
-}
 
-.container::placeholder {
-  color: var(--gray-300);
-}
+  ::placeholder {
+    color: var(--gray-300);
+  }
 
-.container:focus {
-  border-color: var(--purple-dark);
-}
+  :focus {
+    border-color: var(--purple-dark);
+  }
+`;

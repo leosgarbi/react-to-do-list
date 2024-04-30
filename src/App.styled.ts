@@ -19,3 +19,5 @@ export const Container = styled.div`
     margin-bottom: 2.3125rem;
   }
 `;
+
+export const Main = styled.main``;
