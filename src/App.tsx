@@ -1,10 +1,10 @@
 import { PlusCircle } from '@phosphor-icons/react';
-import { Trash } from '@phosphor-icons/react/dist/ssr';
+import * as Styled from './App.styled';
 import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Input } from './components/Input/Input';
+import Task from './components/Tasks';
 import './global.css';
-import * as Styled from './styled';
 
 export default function App() {
   return (
@@ -20,28 +20,7 @@ export default function App() {
           </Button>
         </Styled.Container>
 
-        <Styled.TasksList>
-          <Styled.HeaderContent>
-            <aside>
-              Tarefas criadas <span>0</span>
-            </aside>
-            <aside>
-              Concluídas <span>2 de 5</span>
-            </aside>
-          </Styled.HeaderContent>
-
-          <Styled.DividerLine />
-
-          <Styled.TaskListWrapper>
-            <Styled.TaskListContent>
-              <input type='checkbox' />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <button>
-                <Trash color={'var(--gray-300)'} />
-              </button>
-            </Styled.TaskListContent>
-          </Styled.TaskListWrapper>
-        </Styled.TasksList>
+        <Task name={'Teste'} />
       </Styled.Content>
     </main>
   );

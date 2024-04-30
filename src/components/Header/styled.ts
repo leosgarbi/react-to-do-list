@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex: 1;
   justify-content: center;
-  padding: 2rem 0.25rem;
+  padding: 3rem 0.25rem;
   background-color: var(--black);
 
   img {

@@ -22,7 +22,9 @@ export const ButtonContainer = styled.button`
 
   transition: 0.1s;
 
-  :hover {
+  cursor: pointer;
+
+  &:hover {
     background-color: var(--blue-500);
   }
 `;
