@@ -1,4 +1,6 @@
-.container {
+import styled from 'styled-components';
+
+export const ButtonContainer = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +21,8 @@
   font-size: 0.875rem;
 
   transition: 0.1s;
-}
 
-.container:hover {
-  background-color: var(--blue-500);
-}
+  :hover {
+    background-color: var(--blue-500);
+  }
+`;
