@@ -1,13 +1,14 @@
-import styles from './Empty.module.css';
+import { Clipboard } from '@phosphor-icons/react';
+import * as Styled from './styled';
 
 export function Empty() {
   return (
-    <div className={styles.container}>
-      <img src='/clipboard.png' alt='ícone de prancheta' />
-      <p>
+    <Styled.Container>
+      <Clipboard size={32} />
+      <Styled.TextInfo>
         <strong>Você ainda não tem tarefas cadastradas</strong>
         Crie tarefas e organize seus itens a fazer
-      </p>
-    </div>
+      </Styled.TextInfo>
+    </Styled.Container>
   );
 }

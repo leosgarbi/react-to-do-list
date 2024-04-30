@@ -3,7 +3,7 @@ import * as Styled from './App.styled';
 import { Header } from './components/Header';
 import { Input } from './components/Input';
 import { Button } from './components/Input/components/Button';
-import Task from './components/Task';
+import { Empty } from './components/Task/components/Empty';
 import './global.css';
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
           </Button>
         </Styled.Container>
 
-        <Task name={'Teste'} />
+        <Empty />
       </Styled.Content>
     </Styled.Main>
   );
