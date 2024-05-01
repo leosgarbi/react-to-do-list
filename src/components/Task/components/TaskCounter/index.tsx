@@ -1,6 +1,6 @@
 import * as Styled from './styled';
 
-export default function TaskHeader() {
+export default function TaskCounter() {
   return (
     <Styled.HeaderContent>
       <Styled.HeaderTask>

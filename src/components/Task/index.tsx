@@ -1,19 +1,14 @@
 import TaskContent from './components/TaskContent';
-import TaskHeader from './components/TaskHeader';
+import TaskHeader from './components/TaskCounter';
 import * as Styled from './styled';
 
-export type TasksProps = {
-  name: string;
-};
-
-export default function Task({ name }: TasksProps) {
+export default function Task() {
   return (
     <Styled.TasksList>
       <TaskHeader />
       <Styled.DividerLine />
 
       <TaskContent />
-      {name}
     </Styled.TasksList>
   );
 }

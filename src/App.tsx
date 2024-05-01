@@ -3,7 +3,7 @@ import * as Styled from './App.styled';
 import { Header } from './components/Header';
 import { Input } from './components/Input';
 import { Button } from './components/Input/components/Button';
-import { Empty } from './components/Task/components/Empty';
+import Task from './components/Task';
 import './global.css';
 
 export default function App() {
@@ -15,12 +15,12 @@ export default function App() {
         <Styled.Container>
           <Input />
           <Button>
-            Click
+            Criar
             <PlusCircle size={16} color='#f2f2f2' weight='bold' />
           </Button>
         </Styled.Container>
 
-        <Empty />
+        <Task />
       </Styled.Content>
     </Styled.Main>
   );

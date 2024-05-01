@@ -5,8 +5,7 @@ export default function TaskContent() {
   return (
     <Styled.Wrapper>
       <Styled.Content>
-        <Styled.TaskCompleted />
-
+        <Styled.CheckBox />
         <Styled.TaskText>
           Lorem ipsum dolor sit amet consectetur adipisicing.
         </Styled.TaskText>

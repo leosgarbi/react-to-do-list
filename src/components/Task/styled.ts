@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-export const TasksList = styled.div`
+export const TasksList = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   width: 46rem;
   min-height: 18rem;
-  padding-top: 30px;
 `;
 
 export const DividerLine = styled.div`

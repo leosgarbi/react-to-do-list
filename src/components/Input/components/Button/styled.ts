@@ -20,7 +20,7 @@ export const ButtonContainer = styled.button`
   font-weight: bold;
   font-size: 0.875rem;
 
-  transition: 0.1s;
+  transition: 0.2s;
 
   cursor: pointer;
 
