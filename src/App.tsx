@@ -1,18 +1,13 @@
 import { useState } from 'react';
+import { TaskTypes } from './@types';
 import * as Styled from './App.styled';
 import { Header } from './components/Header';
 import { Input } from './components/Input';
 import Task from './components/Task';
 import './global.css';
 
-interface Task {
-  id: number;
-  text: string;
-  completed: boolean;
-}
-
 export default function App() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<TaskTypes[]>([]);
   const [totalTasks, setTotalTasks] = useState(0);
   const [totalCompletedTasks, setTotalCompletedTasks] = useState(0);
 

@@ -2,11 +2,11 @@ import { PlusCircle } from '@phosphor-icons/react';
 import { ChangeEvent, FormEvent, useState } from 'react';
 import * as Styled from './styled';
 
-interface Props {
+interface InputProps {
   addTask: (task: string) => void;
 }
 
-export function Input({ addTask }: Props) {
+export function Input({ addTask }: InputProps) {
   const [newTask, setNewTask] = useState('');
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {

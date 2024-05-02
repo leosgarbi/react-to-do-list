@@ -25,7 +25,7 @@ export const Content = styled.div`
 
 export const CheckBox = styled.input.attrs({ type: 'checkbox' })`
   appearance: none;
-  position: relative; /* Adicione esta linha */
+  position: relative;
 
   width: 15px;
   height: 15px;

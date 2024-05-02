@@ -1,14 +1,9 @@
 import { Trash } from '@phosphor-icons/react';
+import { TaskTypes } from '../../../../@types';
 import * as Styled from './styled';
 
-interface Task {
-  id: number;
-  text: string;
-  completed: boolean;
-}
-
 interface Props {
-  task: Task;
+  task: TaskTypes;
   removeTask: (taskId: number) => void;
   completedTask: (taskId: number) => void;
 }
