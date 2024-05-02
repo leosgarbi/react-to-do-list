@@ -1,16 +1,11 @@
-import { Empty } from './components/Empty'; // Importe o componente Empty
+import { TaskTypes } from '../../@types';
+import { Empty } from './components/Empty';
 import TaskContent from './components/TaskContent';
 import TaskCounter from './components/TaskCounter';
 import * as Styled from './styled';
 
-interface Task {
-  id: number;
-  text: string;
-  completed: boolean;
-}
-
-interface Props {
-  tasks: Task[];
+interface TaskProps {
+  tasks: TaskTypes[];
   removeTask: (taskId: number) => void;
   completedTask: (taskId: number) => void;
   totalTasks: number;
@@ -23,7 +18,7 @@ export default function Task({
   completedTask,
   totalTasks,
   totalCompletedTasks,
-}: Props) {
+}: TaskProps) {
   return (
     <Styled.TasksList>
       <TaskCounter

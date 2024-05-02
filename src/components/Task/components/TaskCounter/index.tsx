@@ -1,6 +1,6 @@
 import * as Styled from './styled';
 
-interface Props {
+interface TaskCounterProps {
   totalTasks: number;
   totalCompletedTasks: number;
 }
@@ -8,7 +8,7 @@ interface Props {
 export default function TaskCounter({
   totalTasks,
   totalCompletedTasks,
-}: Props) {
+}: TaskCounterProps) {
   return (
     <Styled.HeaderContent>
       <Styled.HeaderTask>
