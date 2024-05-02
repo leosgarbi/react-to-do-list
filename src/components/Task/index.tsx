@@ -1,14 +1,50 @@
+import { Empty } from './components/Empty'; // Importe o componente Empty
 import TaskContent from './components/TaskContent';
-import TaskHeader from './components/TaskCounter';
+import TaskCounter from './components/TaskCounter';
 import * as Styled from './styled';
 
-export default function Task() {
+interface Task {
+  id: number;
+  text: string;
+  completed: boolean;
+}
+
+interface Props {
+  tasks: Task[];
+  removeTask: (taskId: number) => void;
+  completedTask: (taskId: number) => void;
+  totalTasks: number;
+  totalCompletedTasks: number;
+}
+
+export default function Task({
+  tasks,
+  removeTask,
+  completedTask,
+  totalTasks,
+  totalCompletedTasks,
+}: Props) {
   return (
     <Styled.TasksList>
-      <TaskHeader />
-      <Styled.DividerLine />
+      <TaskCounter
+        totalTasks={totalTasks}
+        totalCompletedTasks={totalCompletedTasks}
+      />
 
-      <TaskContent />
+      {tasks.length === 0 && <Styled.DividerLine />}
+
+      {tasks.length > 0 ? (
+        tasks.map((task) => (
+          <TaskContent
+            key={task.id}
+            task={task}
+            removeTask={removeTask}
+            completedTask={completedTask}
+          />
+        ))
+      ) : (
+        <Empty />
+      )}
     </Styled.TasksList>
   );
 }

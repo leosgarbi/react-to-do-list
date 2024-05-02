@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface TaskTextProps {
+  completed: boolean;
+}
+
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -58,7 +62,7 @@ export const CheckBox = styled.input.attrs({ type: 'checkbox' })`
   }
 `;
 
-export const TaskText = styled.p`
+export const TaskText = styled.p<TaskTextProps>`
   display: flex;
   width: 40rem;
   align-content: flex-start;
@@ -67,6 +71,13 @@ export const TaskText = styled.p`
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
+
+  ${({ completed }) =>
+    completed &&
+    `
+    color: var(--gray-300);
+    text-decoration: line-through;
+  `}
 `;
 
 export const DeleteButton = styled.button`
