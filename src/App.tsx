@@ -23,15 +23,13 @@ export default function App() {
   };
 
   const completedTask = (taskId: number) => {
-    setTasks(
-      tasks.map((task) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) => {
         if (task.id === taskId) {
           const newCompletedStatus = !task.completed;
-          if (newCompletedStatus) {
-            setTotalCompletedTasks((prevTotal) => prevTotal + 1);
-          } else {
-            setTotalCompletedTasks((prevTotal) => prevTotal - 1);
-          }
+          setTotalCompletedTasks((prevTotal) =>
+            newCompletedStatus ? prevTotal + 1 : prevTotal - 1
+          );
           return { ...task, completed: newCompletedStatus };
         }
         return task;
