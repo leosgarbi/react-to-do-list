@@ -9,18 +9,18 @@ Currently, two official plugins are available:
 
 # How to install and execute
 
-## Clone this repository locally:
+Clone this repository locally:
 
 ```sh
 https://github.com/leosgarbi/react-to-do-list.git
 ```
-## Install the dependencies.
+Install the dependencies. 
 
 ```sh
 npm i
 ```
 
-## Start applications:
+Start applications:
 
 ```sh
 yarn run dev
