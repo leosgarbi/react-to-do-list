@@ -1,11 +1,34 @@
 import { PlusCircle } from '@phosphor-icons/react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import * as Styled from './styled';
 
-export function Input() {
+interface Props {
+  addTask: (task: string) => void;
+}
+
+export function Input({ addTask }: Props) {
+  const [newTask, setNewTask] = useState('');
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setNewTask(e.target.value);
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (newTask.trim() !== '') {
+      addTask(newTask);
+      setNewTask('');
+    }
+  };
+
   return (
-    <Styled.Container>
-      <Styled.TextArea placeholder='Adicione uma tarefa' />
-      <Styled.Button>
+    <Styled.Container onSubmit={handleSubmit}>
+      <Styled.TextArea
+        placeholder='Adicione uma tarefa'
+        value={newTask}
+        onChange={handleInputChange}
+      />
+      <Styled.Button type='submit'>
         Criar
         <PlusCircle size={16} color='#f2f2f2' weight='bold' />
       </Styled.Button>

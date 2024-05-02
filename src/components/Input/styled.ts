@@ -6,7 +6,7 @@ export const Container = styled.form`
   gap: 0.5rem;
 `;
 
-export const TextArea = styled.textarea`
+export const TextArea = styled.input`
   border: 1px solid var(--gray-700);
   border-radius: 8px;
   background-color: var(--gray-500);
