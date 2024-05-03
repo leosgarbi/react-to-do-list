@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 Clone this repository locally:
 
 ```sh
-https://github.com/leosgarbi/react-to-do-list.git
+git clone https://github.com/leosgarbi/react-to-do-list.git
 ```
 Install the dependencies. 
 
