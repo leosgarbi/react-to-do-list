@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { TaskTypes } from './@types';
 import * as Styled from './App.styled';
 import { Header } from './components/Header';
 import { Input } from './components/Input';
-import Task from './components/Task';
+import Task, { TaskTypes } from './components/Task';
 import './global.css';
 
 export default function App() {

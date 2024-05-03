@@ -1,5 +1,5 @@
 import { Trash } from '@phosphor-icons/react';
-import { TaskTypes } from '../../../../@types';
+import { TaskTypes } from '../..';
 import * as Styled from './styled';
 
 interface Props {

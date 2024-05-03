@@ -1,8 +1,12 @@
-import { TaskTypes } from '../../@types';
 import { Empty } from './components/Empty';
 import TaskContent from './components/TaskContent';
 import TaskCounter from './components/TaskCounter';
 import * as Styled from './styled';
+export interface TaskTypes {
+  id: number;
+  text: string;
+  completed: boolean;
+}
 
 interface TaskProps {
   tasks: TaskTypes[];
